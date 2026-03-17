@@ -107,11 +107,13 @@
     YTPlay.addEventListener('click', () => {
         YTPlayerOverlay.classList.add('active');
         YTPlay.style.opacity = '0';
+        document.body.style.overflow = 'hidden';
     });
 
     YTPlayerOverlay.addEventListener('click', () => {
         YTPlayerOverlay.classList.remove('active');
         YTPlay.style.opacity = '1';
+        document.body.style.overflow = 'visible';
     });
 
     // Back to top button
