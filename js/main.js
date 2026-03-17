@@ -93,13 +93,6 @@
         nav: false
     });
 
-
-    // Facts counter
-    $('[data-toggle="counter-up"]').counterUp({
-        delay: 5,
-        time: 2000
-    });
-
     // Youtube Video Popup
     const YTPlayerOverlay = document.querySelector('.youtube-player-overlay');
     const YTPlay = document.querySelector('.pulsating-play-btn');
