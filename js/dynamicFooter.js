@@ -8,7 +8,7 @@ footer.innerHTML =
                     <div class="col-md-6 col-lg-6 col-xl-4">
                         <div class="footer-item">
                             <a href="index.html" class="p-0 mb-3">
-                                <img src="img/logos/consorcio_letraimg.png" alt="Logo_Consorcio">
+                                <img src="img/logos/consorcio_letraimg.webp" alt="Logo_Consorcio">
                             </a>
                             <p>
                                 Hemos unido nuestras empresas para poder abordar problemas medioambientales 
