@@ -777,7 +777,7 @@
     color: var(--bs-white);
 }
 
-.scrachall .scrachall-item:hover .rounded-bottom h4 {
+.scrachall .scrachall-item:hover .rounded-bottom h4, .scrachall .scrachall-item:hover .rounded-bottom h3 {
     color: var(--bs-white);
 }
 /*** Scrapping Challenge End ***/
