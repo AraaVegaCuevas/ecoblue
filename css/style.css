@@ -763,6 +763,36 @@
     background-repeat: no-repeat; 
     background-size: cover;
 }
+
+.form-floating input[type=number]::-webkit-inner-spin-button, 
+.form-floating input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}
+
+.subject-select {
+    background-color: var(--bs-white) !important;
+    color: var(--bs-dark);
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.subject-field::after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    color: var(--bs-primary);
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.subject-select option {
+    color: var(--bs-dark);
+}
 /*** Contact End ***/
 
 /*** Scrapping Challenge Start ***/
@@ -987,16 +1017,6 @@
     background: var(--bs-dark);
 }
 /*** Team End ***/
-
-/*** Contact Form Start ***/
-
-.form-floating input[type=number]::-webkit-inner-spin-button, 
-.form-floating input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none;
-}
-
-/*** Contact Form Start ***/
-
 
 /*** Footer Start ***/
 .footer {
