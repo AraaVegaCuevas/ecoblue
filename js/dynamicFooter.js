@@ -5,7 +5,7 @@ footer.innerHTML =
         <div class="container-fluid footer">
             <div class="container py-5 border-start-0 border-end-0">
                 <div class="row g-5">
-                    <div class="col-md-6 col-lg-6 col-xl-4">
+                    <div class="col-md-12 col-lg-5 col-xl-5">
                         <div class="footer-item">
                             <a href="index.html" class="p-0 mb-3">
                                 <img src="img/logos/consorcio_letraimg.webp" alt="Logo_Consorcio">
@@ -17,8 +17,8 @@ footer.innerHTML =
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-2">
-                        <div class="footer-item">
+                    <div class="col-md-6 col-lg-3 col-xl-3 ps-xl-5 ps-lg-5">
+                        <div class="ps-xl-4 footer-item">
                             <h4 class="text-white mb-4">Ecoterra</h4>
                             <a href="ecoterra.html#sobre-nosotros"><i class="fas fa-angle-right me-2"></i> Sobre nosotros</a>
                             <a href="ecoterra.html#nuestros-productos"><i class="fas fa-angle-right me-2"></i> Nuestros productos</a>
@@ -26,15 +26,8 @@ footer.innerHTML =
                             <a href="ecoterra.html#nuestros-clientes"><i class="fas fa-angle-right me-2"></i> Nuestros clientes</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-2">
-                        <div class="footer-item">
-                            <h4 class="text-white mb-4">Blauemeer</h4>
-                            <a href="blauemeer.html#sobre-nosotros"><i class="fas fa-angle-right me-2"></i> Sobre nosotros</a>
-                            <a href="blauemeer.html#desafio-desguace"><i class="fas fa-angle-right me-2"></i> Desafío desguace</a>
-                            <a href="blauemeer.html#nuestro-trabajo"><i class="fas fa-angle-right me-2"></i> Nuestro trabajo</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-4">
+
+                    <div class="col-md-6 col-lg-3 col-xl-4 ps-lg-5">
                         <div class="footer-item">
                             <h4 class="text-white mb-4">¡Contáctanos!</h4>
                             <div class="d-flex align-items-center">
