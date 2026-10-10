@@ -93,21 +93,60 @@
         nav: false
     });
 
-    // Youtube Video Popup
+    /* Video Popup Start */
     const YTPlayerOverlay = document.querySelector('.youtube-player-overlay');
-    const YTPlay = document.querySelector('.pulsating-play-btn');
+    const YTPlay = document.querySelectorAll('.play-btn');
+    const vidClose = YTPlayerOverlay?.querySelector('.close-btn');
 
-    YTPlay.addEventListener('click', () => {
-        YTPlayerOverlay.classList.add('active');
-        YTPlay.style.opacity = '0';
-        document.body.style.overflow = 'hidden';
+    // Gallery exclusive elements
+    const video = document.querySelector('#myVideo');
+    const videoSource = document.querySelector('#videoSource');
+
+    // Youtube exclusive elements
+    const youtubeFrame = YTPlayerOverlay?.querySelector('iframe');
+
+    // Open video
+    YTPlay.forEach(play => {
+        play.addEventListener('click', () => {
+
+            // if local video reproductor exists
+            if (video && videoSource) {
+                videoSource.src = play.dataset.video;
+                video.load();
+                video.play().catch(error => {
+                    console.warn('No se pudo reproducir el vídeo:', error);
+                });
+            }
+
+            // show overlay
+            YTPlayerOverlay?.classList.add('active');
+            document.body.classList.add('video-playing');
+            document.body.style.overflow = 'hidden';
+        });
     });
 
-    YTPlayerOverlay.addEventListener('click', () => {
+    // close reproductor
+    vidClose?.addEventListener('click', () => {
         YTPlayerOverlay.classList.remove('active');
-        YTPlay.style.opacity = '1';
-        document.body.style.overflow = 'visible';
+        document.body.classList.remove('video-playing');
+
+        // stop local videos
+        if (video) {
+            video.pause();
+            video.currentTime = 0;
+            videoSource.src = '';
+            video.load();
+        }
+
+        // stop youtube upon closing
+        if (youtubeFrame) {
+            const currentSrc = youtubeFrame.src;
+            youtubeFrame.src = currentSrc;
+        }
+
+        document.body.style.overflow = '';
     });
+    /* Video Popup End */
 
     // Back to top button
     $(window).scroll(function () {
