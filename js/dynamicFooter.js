@@ -10,7 +10,7 @@ footer.innerHTML =
                             <a href="index.html" class="p-0 mb-3">
                                 <img src="img/logos/consorcio_letraimg.webp" alt="Logo_Consorcio">
                             </a>
-                            <p>
+                            <p data-i18n="footer.description">
                                 Hemos unido nuestras empresas para poder abordar problemas medioambientales 
                                 a gran escala. Nuestras soluciones de limpieza medioambiental 
                                 hacen que el pavimentado sea rápido, eficiente, duradero como el cemento y de bajo coste.
@@ -20,16 +20,16 @@ footer.innerHTML =
                     <div class="col-md-6 col-lg-3 col-xl-3 ps-xl-5 ps-lg-5">
                         <div class="ps-xl-4 footer-item">
                             <h4 class="text-white mb-4">Ecoterra</h4>
-                            <a href="ecoterra.html#sobre-nosotros"><i class="fas fa-angle-right me-2"></i> Sobre nosotros</a>
-                            <a href="ecoterra.html#nuestros-productos"><i class="fas fa-angle-right me-2"></i> Nuestros productos</a>
-                            <a href="ecoterra.html#por-que-elegirnos"><i class="fas fa-angle-right me-2"></i> Por qué elegirnos</a>
-                            <a href="ecoterra.html#nuestros-clientes"><i class="fas fa-angle-right me-2"></i> Nuestros clientes</a>
+                            <a href="ecoterra.html#sobre-nosotros"><i class="fas fa-angle-right me-2"></i><span data-i18n="nav.about"> Sobre nosotros</span></a>
+                            <a href="ecoterra.html#nuestros-productos"><i class="fas fa-angle-right me-2"></i><span data-i18n="nav.products"> Nuestros productos</span></a>
+                            <a href="ecoterra.html#por-que-elegirnos"><i class="fas fa-angle-right me-2"></i><span data-i18n="nav.why"> Por qué elegirnos</span></a>
+                            <a href="ecoterra.html#nuestros-clientes"><i class="fas fa-angle-right me-2"></i><span data-i18n="nav.clients"> Nuestros clientes</span></a>
                         </div>
                     </div>
 
                     <div class="col-md-6 col-lg-3 col-xl-4 ps-lg-5">
                         <div class="footer-item">
-                            <h4 class="text-white mb-4">¡Contáctanos!</h4>
+                            <h4 class="text-white mb-4" data-i18n="footer.contact">¡Contáctanos!</h4>
                             <div class="d-flex align-items-center">
                                 <i class="fa fa-phone-alt text-primary me-3"></i>
                                 <p class="text-white mb-0">+56 9 8192 0022</p>
@@ -50,12 +50,12 @@ footer.innerHTML =
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-6 text-center text-md-start mb-md-0">
-                        <span class="text-body"><a href="https://wa.link/2h60d9" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Araceli Vega Cuevas</a>, All right reserved.</span>
+                        <span class="text-body"><a href="https://wa.link/2h60d9" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Araceli Vega Cuevas</a>, <span data-i18n="footer.rights">All right reserved.</span></span>
                     </div>
                     <div class="col-md-6 text-center text-md-end text-body">
                         <!--/*** The author’s attribution link must remain intact in the template. ***/-->
                         <!--/*** If you wish to remove this credit link, please purchase the Pro Version . ***/-->
-                        Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a>
+                        <span data-i18n="footer.designedBy">Designed By</span> <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a>
                     </div>
                 </div>
             </div>

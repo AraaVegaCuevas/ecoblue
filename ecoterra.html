@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Sobre Ecoterra - Consorcio Ecoterra-Blauemeer</title>
+        <title data-i18n="page.title">Sobre Ecoterra - Consorcio Ecoterra-Blauemeer</title>
         <link rel="icon" type="image/webp" href="img/logos/consorcio_img.webp">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
@@ -31,7 +31,7 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
 
-    <body>
+    <body data-page="ecoterra">
 
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -47,36 +47,101 @@
                 <a href="index.html" class="navbar-brand p-0">
                     <img src="img/logos/consorcio_letraimg.webp" alt="Logo Consorcio">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapseLang">
+                    <span class="fa fa-globe"></span>
+                </button>
+
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Inicio</a>
+                    <div class="navbar-nav mt-3 ms-4 py-0">
+                        <a href="index.html" class="nav-item nav-link" data-i18n="nav.home">Inicio</a>
                         <div class="nav-item dropdown">
                             <a href="ecoterra.html" class="nav-link active" data-bs-toggle="dropdown">
-                                <span class="dropdown-toggle">Ecoterra</span>
+                                <span class="dropdown-toggle" data-i18n="nav.ecoterra">Ecoterra</span>
                             </a>
                             <div class="dropdown-menu m-0">
-                                <a href="ecoterra.html#sobre-nosotros" class="dropdown-item">Sobre nosotros</a>
-                                <a href="ecoterra.html#nuestros-productos" class="dropdown-item">Nuestros productos</a>
-                                <a href="ecoterra.html#por-que-elegirnos" class="dropdown-item">¿Por qué elegirnos?</a>
-                                <a href="ecoterra.html#nuestros-clientes" class="dropdown-item">Nuestros clientes</a>
+                                <a href="ecoterra.html#sobre-nosotros" class="dropdown-item" data-i18n="nav.about">Sobre nosotros</a>
+                                <a href="ecoterra.html#nuestros-productos" class="dropdown-item" data-i18n="nav.products">Nuestros productos</a>
+                                <a href="ecoterra.html#por-que-elegirnos" class="dropdown-item" data-i18n="nav.why">¿Por qué elegirnos?</a>
+                                <a href="ecoterra.html#nuestros-clientes" class="dropdown-item" data-i18n="nav.clients">Nuestros clientes</a>
                             </div>
                         </div>
 
-                        <a href="gallery.html" class="nav-item nav-link">Galería</a>
+                        <a href="gallery.html" class="nav-item nav-link" data-i18n="nav.gallery">Galería</a>
 
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                                <span class="dropdown-toggle">Asociaciones</span>
+                                <span class="dropdown-toggle" data-i18n="nav.partners">Asociaciones</span>
                             </a>
                             <div class="dropdown-menu m-0">
-                                <a href="blauemeer.html" class="dropdown-item">Blauemeer</a>
+                                <a href="blauemeer.html" class="dropdown-item" data-i18n="nav.blauemeer">Blauemeer</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                        <a href="contact.html" class="nav-item nav-link" data-i18n="nav.contact">Contacto</a>
+                    </div>
+                </div>
 
+
+                <div class="collapse navbar-collapse" id="navbarCollapseLang">
+                    <div class="navbar-nav mt-3 ms-auto py-0">
+                        <div class="nav-item dropdown ms-4">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="d-inline-flex align-items-center gap-2">
+                                    <img
+                                        id="langFlag"
+                                        src="https://flagcdn.com/w20/es.png"
+                                        width="20"
+                                        alt="Español"
+                                    >
+                                    <span id="langToggle">ES</span>
+                                    <span class="dropdown-toggle"></span>
+                                </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end end-0 m-0"> 
+                                <a href="#" class="dropdown-item ps-2" data-lang="es">
+                                    <div class="d-flex ps-2">
+                                        <picture class="pe-2">
+                                            <source
+                                                type="image/webp"
+                                                srcset="https://flagcdn.com/w20/es.webp,
+                                                https://flagcdn.com/w40/es.webp 2x">
+                                            <source
+                                                type="image/png"
+                                                srcset="https://flagcdn.com/w20/es.png,
+                                                https://flagcdn.com/w40/es.png 2x">
+                                            <img
+                                                src="https://flagcdn.com/w20/es.png"
+                                                width="20"
+                                                alt="Spain">
+                                        </picture>
+                                        <span data-i18n="language.spanish">Español</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="dropdown-item ps-2" data-lang="en">
+                                    <div class="d-flex ps-2">
+                                        <picture class="pe-2">
+                                            <source
+                                                type="image/webp"
+                                                srcset="https://flagcdn.com/w20/us.webp,
+                                                https://flagcdn.com/w40/us.webp 2x">
+                                            <source
+                                                type="image/png"
+                                                srcset="https://flagcdn.com/w20/us.png,
+                                                https://flagcdn.com/w40/us.png 2x">
+                                            <img
+                                                src="https://flagcdn.com/w20/us.png"
+                                                width="20"
+                                                alt="United States">
+                                        </picture>
+                                        <span data-i18n="language.english">Inglés</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -102,9 +167,9 @@
                         </div>
                         
                         <div class="col-xl-6 about-us-e-text wow fadeInRight" data-wow-delay="0.2s">
-                            <h4 class="text-primary">Lo que hacemos</h4>
-                            <h3 class="display-6 mb-3">Sobre nosotros</h3>
-                            <p class="mb-4">
+                            <h4 class="text-primary" data-i18n="about.eyebrow">Lo que hacemos</h4>
+                            <h3 class="display-6 mb-3" data-i18n="about.title">Sobre nosotros</h3>
+                            <p class="mb-4" data-i18n="about.description">
                                 Somos una empresa integrada por ejecutivos y profesionales que en alianza en Chile con
                                 la empresa Ecoterra USA LLC, con vasta experiencia en servicios industriales,
                                 infraestructura y operaciones de terreno, estamos ofreciendo a nuestros clientes un
@@ -116,8 +181,8 @@
                                 <div class="d-flex mb-3">
                                     <div><i class="fa fa-shower fa-3x text-primary"></i></div>
                                     <div class="ms-4">
-                                        <h4>Supresores de polvo</h4>
-                                        <p>
+                                        <h4 data-i18n="about.dust.title">Supresores de polvo</h4>
+                                        <p data-i18n="about.dust.description">
                                             Nuestros productos, resultan de la unión de humectantes orgánicos junto a minerales
                                             Higroscópicos y agentes infiltradores de suelos, que resultan ser un aliado perfecto para los
                                             programas de control de polvo, logrando que las condiciones de humedad del suelo
@@ -129,8 +194,8 @@
                                 <div class="d-flex">
                                     <div><i class="fa fa-road fa-3x text-primary"></i></div>
                                     <div class="ms-4">
-                                        <h4>Pavimento de bajo costo</h4>
-                                        <p>
+                                        <h4 data-i18n="about.pavement.title">Pavimento de bajo costo</h4>
+                                        <p data-i18n="about.pavement.description">
                                             Aplicados al suelo, las moléculas de copolímero forman enlaces entre el suelo y/o 
                                             las partículas de agregado, para formar una superficie dura, flexible y resistente 
                                             al agua. Las tasas de aplicación se pueden ajustar para dar cabida a la supresión 
@@ -161,8 +226,8 @@
         <div class="product container-fluid py-3" id="nuestros-productos">
             <div class="container">
                 <div class="text-center mx-auto pb-3 wow fadeInUp" data-wow-delay="0.2s">
-                    <h4 class="text-primary">Lo que ofrecemos</h4>
-                    <h3 class="display-6 mb-4">Nuestros productos</h3>
+                    <h4 class="text-primary" data-i18n="products.eyebrow">Lo que ofrecemos</h4>
+                    <h3 class="display-6 mb-4" data-i18n="products.title">Nuestros productos</h3>
                 </div>
 
                 <div class="scrachall mb-5 row g-5 text-center">
@@ -175,12 +240,12 @@
                             
                             <div class="rounded-bottom p-4">
                                 <h3 class="d-inline-block mb-4">POLYCRETE</h3>
-                                <p class="mb-4">
+                                <p class="mb-4" data-i18n="products.polycrete.description1">
                                     Polycrete es un polímero orientado principalmente a la estabilización y endurecimiento de superficies,
                                     formando enlaces entre las partículas del suelo que generan una capa dura, flexible, resistente al agua
                                     y a la erosión.
                                 </p>
-                                <p class="mb-4">
+                                <p class="mb-4" data-i18n="products.polycrete.description2">
                                     Puede utilizarse tanto para controlar polvo como para estabilizar caminos y superficies de tránsito.
                                     Además, es biodegradable, biocompatible, no peligroso y no genera oxidación ni residuos tóxicos.
                                 </p>
@@ -196,12 +261,12 @@
                             </div>
                             <div class="rounded-bottom p-4">
                                 <h3 class="d-inline-block mb-4">DUSTOP</h3>
-                                <p class="mb-4">
+                                <p class="mb-4" data-i18n="products.dustop.description1">
                                     Dustop es una emulsión orientada principalmente al control de polvo sin utilizar agua, combinando 
                                     humectantes orgánicos, minerales higroscópicos y agentes infiltradores que permiten retener la 
                                     humedad del suelo.
                                 </p>
-                                <p class="mb-4">
+                                <p class="mb-4" data-i18n="products.dustop.description2">
                                     Esto reduce la frecuencia de los riegos, disminuye el consumo de agua y mejora la eficiencia
                                     de los caminos y la flota minera. Además, cubre mayor superficie por carga que los 
                                     productos de cloruro.
@@ -214,16 +279,8 @@
 
 
                 <div class="text-center mx-auto pb-3 wow fadeInUp" data-wow-delay="0.2s">
-                    <h4 class="text-primary display-6 mb-4">Ventajas</h4>
+                    <h4 class="text-primary display-6 mb-4" data-i18n="advantages.title">Ventajas</h4>
                 </div>
-
-
-
-
-
-
-
-
                 
                 <div class="row g-5">
 
@@ -234,9 +291,9 @@
                                 <i class="fas fa-globe-americas fa-3x"></i>
                             </div>
                             <div>
-                                <h3>Desarrollo Internacional</h3>
+                                <h3 data-i18n="advantages.international.title">Desarrollo Internacional</h3>
                             </div>
-                            <p>Productos de alta calidad, provenientes de laboratorios certificados, nacionales e internacionales.
+                            <p data-i18n="advantages.international.description">Productos de alta calidad, provenientes de laboratorios certificados, nacionales e internacionales.
                             </p>
                         </div>
                     </div>
@@ -248,9 +305,9 @@
                                 <i class="fas fa-water fa-3x"></i>
                             </div>
                             <div>
-                                <h3>Bajo consumo de agua</h3>
+                                <h3 data-i18n="advantages.water.title">Bajo consumo de agua</h3>
                             </div>
-                            <p>Nuestros supresores requieren un mínimo de agua (solo 2% del gasto quincenal normal).
+                            <p data-i18n="advantages.water.description">Nuestros supresores requieren un mínimo de agua (solo 2% del gasto quincenal normal).
                             </p>
                         </div>
                     </div>
@@ -262,9 +319,9 @@
                                 <i class="fas fa-road fa-3x"></i>
                             </div>
                             <div>
-                                <h3>Baja Mantención</h3>
+                                <h3 data-i18n="advantages.maintenance.title">Baja Mantención</h3>
                             </div>
-                            <p>Mínima cantidad de aljibes para mantención de caminos. ( 1 o 2 cada 15 días o un par de veces al año
+                            <p data-i18n="advantages.maintenance.description">Mínima cantidad de aljibes para mantención de caminos. ( 1 o 2 cada 15 días o un par de veces al año
                                 dependiendo del producto y el área a cubrir).
                             </p>
                         </div>
@@ -277,9 +334,9 @@
                                 <i class="fas fa-leaf fa-3x"></i>
                             </div>
                             <div>
-                                <h3>Productos sustentables</h3>
+                                <h3 data-i18n="advantages.sustainable.title">Productos sustentables</h3>
                             </div>
-                            <p>Todos nuestros productos no contaminan y no causan daño al medio ambiente, haciendo una contribución 
+                            <p data-i18n="advantages.sustainable.description">Todos nuestros productos no contaminan y no causan daño al medio ambiente, haciendo una contribución 
                                 positiva a la sostenibilidad del planeta.
                             </p>
                         </div>
@@ -292,9 +349,9 @@
                                 <i class="fas fa-tasks fa-3x"></i>
                             </div>
                             <div>
-                                <h3>Aplicación programada</h3>
+                                <h3 data-i18n="advantages.planned.title">Aplicación programada</h3>
                             </div>
-                            <p>Nuestras propuestas son precisas con un plan de trabajo definido y que puede ser realizado por la
+                            <p data-i18n="advantages.planned.description">Nuestras propuestas son precisas con un plan de trabajo definido y que puede ser realizado por la
                                 compañía sin necesidad de contratar nuestros servicios y personal, se puede entregar 
                                 capacitación para ello.
                             </p>
@@ -308,9 +365,9 @@
                                 <i class="fas fa-calendar-check fa-3x"></i>
                             </div>
                             <div>
-                                <h3>Regularidad</h3>
+                                <h3 data-i18n="advantages.regularity.title">Regularidad</h3>
                             </div>
-                            <p>Podemos hacer aplicaciones con mantenciones cada 15 a 20 días (Dustop) o Aplicaciones con una
+                            <p data-i18n="advantages.regularity.description">Podemos hacer aplicaciones con mantenciones cada 15 a 20 días (Dustop) o Aplicaciones con una
                                 mantención anual (Polycrete o Pavimento de bajo costo).
                             </p>
                         </div>
@@ -328,15 +385,15 @@
         <div class="container-fluid pt-5" id="por-que-elegirnos">
             <div class="container">
                 <div class="text-center mx-auto pb-3 wow fadeInUp" data-wow-delay="0.2s" >
-                    <h4 class="text-primary">Lo que nos diferencia</h4>
-                    <h3 class="display-6 mb-4">¿Por qué elegirnos?</h3>
-                    <p class="mb-4">
+                    <h4 class="text-primary" data-i18n="why.eyebrow">Lo que nos diferencia</h4>
+                    <h3 class="display-6 mb-4" data-i18n="why.title">¿Por qué elegirnos?</h3>
+                    <p class="mb-4" data-i18n="why.description1">
                         Todas las empresas que ofrecen productos similares en el mercado dicen tener
                         productos ecológicos, que eliminan polvo y polución, sin embargo, la aplicación 
                         de estos no es para todo tipo de terreno, ya que no tienen un plan de mantención 
                         y los costos de aplicación son elevados.
                     </p>
-                    <p class="mb-4">
+                    <p class="mb-4" data-i18n="why.description2">
                         Nuestros productos, en cambio, son de alta calidad, con un plan de aplicación definido, 
                         con costos de aplicación bajos y con resultados que se mantienen por mucho más tiempo que los productos 
                         tradicionales, lo que se traduce en una mayor rentabilidad para nuestros clientes.
@@ -352,20 +409,20 @@
                 <div class="nav-btns col-lg-2 col-xl-3">
                     <ul class="nav flex-column" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link active show" data-bs-toggle="tab" href="#process-tab-1" aria-selected="true" role="tab">Escarificado</a>
+                            <a class="nav-link active show" data-i18n="process.scarifying.title" data-bs-toggle="tab" href="#process-tab-1" aria-selected="true" role="tab">Escarificado</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link" data-bs-toggle="tab" href="#process-tab-2" aria-selected="false" tabindex="-1" role="tab">Nivelado</a>
+                            <a class="nav-link" data-i18n="process.leveling.title" data-bs-toggle="tab" href="#process-tab-2" aria-selected="false" tabindex="-1" role="tab">Nivelado</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link" data-bs-toggle="tab" href="#process-tab-3" aria-selected="false" tabindex="-1" role="tab">Compactado</a>
+                            <a class="nav-link" data-i18n="process.compacting.title" data-bs-toggle="tab" href="#process-tab-3" aria-selected="false" tabindex="-1" role="tab">Compactado</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link" data-bs-toggle="tab" href="#process-tab-4" aria-selected="false" tabindex="-1" role="tab">Aplicación tópica</a>
+                            <a class="nav-link" data-i18n="process.topical.title" data-bs-toggle="tab" href="#process-tab-4" aria-selected="false" tabindex="-1" role="tab">Aplicación tópica</a>
                         </li>
 
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link" data-bs-toggle="tab" href="#process-tab-5" aria-selected="false" tabindex="-1" role="tab">Aplicación mixed</a>
+                            <a class="nav-link" data-i18n="process.mixed.title" data-bs-toggle="tab" href="#process-tab-5" aria-selected="false" tabindex="-1" role="tab">Aplicación mixed</a>
                         </li>
                     </ul>
                 </div>
@@ -376,17 +433,17 @@
                         <div class="tab-pane active" id="process-tab-1" role="tabpanel">
                             <div class="row">
                                 <div class="col-lg-8 mb-3">
-                                    <h3 class="mb-3">Escarificado</h3>
-                                    <p>
+                                    <h3 class="mb-3" data-i18n="process.scarifying.title">Escarificado</h3>
+                                    <p data-i18n="process.scarifying.description1">
                                         El proceso de escarificado de vías con maquinaria implica varios pasos clave
                                         para restaurar y nivelar la superficie del camino.
                                     </p>
-                                    <p>
+                                    <p data-i18n="process.scarifying.description2">
                                         Primero, se utiliza una motoniveladora equipada
                                         con escarificadores, que son dientes de acero, para romper y aflojar la capa superior del suelo.
                                         Este proceso elimina las irregularidades y compactaciones previas.
                                     </p>
-                                    <p>
+                                    <p data-i18n="process.scarifying.description3">
                                         A medida que la motoniveladora avanza, los escarificadores penetran el suelo, levantando y
                                         mezclando el material suelto. Esto permite una mejor absorción de los productos aglomerantes
                                         en etapas posteriores del proceso, mejorando la estabilidad y durabilidad de la vía.
@@ -401,19 +458,19 @@
                         <div class="tab-pane" id="process-tab-2" role="tabpanel">
                             <div class="row">
                                 <div class="col-lg-8">
-                                    <h3 class="mb-3">Nivelado</h3>
-                                    <p>
+                                    <h3 class="mb-3" data-i18n="process.leveling.title">Nivelado</h3>
+                                    <p data-i18n="process.leveling.description1">
                                         El proceso de nivelado es fundamental para garantizar que la superficie del
                                         terreno esté uniforme y adecuada para su uso.
                                     </p>
-                                    <p>
+                                    <p data-i18n="process.leveling.description2">
                                         Este proceso comienza con el uso de una
                                         motoniveladora, una máquina equipada con una cuchilla frontal que se ajusta a diferentes ángulos y
                                         profundidades. La cuchilla corta y mueve el material del suelo, rellenando los baches y eliminando
                                         las elevaciones innecesarias. El operador ajusta continuamente la posición de la cuchilla para
                                         lograr una superficie lisa y homogénea.
                                     </p>
-                                    <p>
+                                    <p data-i18n="process.leveling.description3">
                                         El nivelado adecuado es crucial para la estabilidad de la vía, ya que una superficie irregular puede
                                         causar problemas de drenaje y aumentar el desgaste del camino.
                                     </p>
@@ -427,18 +484,18 @@
                         <div class="tab-pane" id="process-tab-3" role="tabpanel">
                             <div class="row">
                                 <div class="col-lg-8">
-                                    <h3 class="mb-3">Compactado</h3>
-                                    <p>
+                                    <h3 class="mb-3" data-i18n="process.compacting.title">Compactado</h3>
+                                    <p data-i18n="process.compacting.description1">
                                         El proceso de compactado de una vía es esencial para asegurar su durabilidad y
                                         estabilidad. Este proceso comienza después del escarificado y nivelado del terreno.
                                     </p>
-                                    <p>
+                                    <p data-i18n="process.compacting.description2">
                                         Se utiliza un rodillo compactador, una maquinaria pesada que aplica presión sobre la superficie de la vía. El
                                         rodillo pasa repetidamente sobre el suelo suelto, consolidando y densificando el material. Esta
                                         compactación elimina los huecos de aire y aumenta la cohesión de las partículas del suelo, lo que
                                         mejora la resistencia a la erosión y la capacidad de soportar el tráfico vehicular. 
                                     </p>
-                                    <p>
+                                    <p data-i18n="process.compacting.description3">
                                         Un compactado adecuado garantiza una base firme y uniforme, esencial para la durabilidad de la vía.
                                     </p>
                                 </div>
@@ -451,18 +508,18 @@
                         <div class="tab-pane" id="process-tab-4" role="tabpanel">
                             <div class="row">
                                 <div class="col-lg-8">
-                                    <h3 class="mb-3">Aplicación tópica</h3>
-                                    <p>
+                                    <h3 class="mb-3" data-i18n="process.topical.title">Aplicación tópica</h3>
+                                    <p data-i18n="process.topical.description1">
                                         El proceso de aplicación tópica del producto aglomerante para vías de
                                         circulación vehicular mediante riego por aspersión consiste en utilizar un equipo de aspersión
                                         para distribuir uniformemente el aglomerante sobre la superficie del camino. 
                                     </p>
-                                    <p>
+                                    <p data-i18n="process.topical.description2">
                                         La boquilla del aspersor atomiza el producto químico en pequeñas gotas que se esparcen sobre el suelo, 
                                         asegurando una cobertura uniforme. A medida que el aglomerante se deposita, se adhiere a las 
                                         partículas del suelo, formando enlaces que aumentan la cohesión y estabilidad del terreno. 
                                     </p>
-                                    <p>
+                                    <p data-i18n="process.topical.description3">
                                         La distribución por aspersión permite una aplicación eficiente y controlada, 
                                         maximizando la efectividad del aglomerante en la estabilización del camino.
                                     </p>
@@ -476,20 +533,20 @@
                         <div class="tab-pane" id="process-tab-5" role="tabpanel">
                             <div class="row">
                                 <div class="col-lg-8">
-                                    <h3 class="mb-3">Aplicación mixed</h3>
-                                    <p>
+                                    <h3 class="mb-3" data-i18n="process.mixed.title">Aplicación mixed</h3>
+                                    <p data-i18n="process.mixed.description1">
                                         El proceso de aplicación mixed implica varios pasos clave. Primero, el
                                         material escarificado se recoge y se mezcla con un producto aglomerante 
                                         en una proporción adecuada. Esta mezcla se realiza utilizando equipos 
                                         especializados que aseguran una combinación homogénea. 
                                     </p>
-                                    <p>
+                                    <p data-i18n="process.mixed.description2">
                                         Una vez que el material escarificado y el aglomerante están bien mezclados, 
                                         se distribuyen uniformemente sobre la superficie de la vía utilizando una 
                                         motoniveladora. Posteriormente, se utiliza un rodillo compactador para consolidar
                                         y densificar la mezcla aplicada, asegurando una base firme y estable para la vía.
                                     </p>
-                                    <p>
+                                    <p data-i18n="process.mixed.description3">
                                         Este proceso proporciona una superficie
                                         resistente al tráfico vehicular y mejora la durabilidad de la vía.
                                     </p>
@@ -510,9 +567,9 @@
         <div class="mb-5" id="nuestros-clientes">
             <div class="container">
                 <div class="text-center mx-auto pb-3 wow fadeInUp" data-wow-delay="0.2s" >
-                    <h4 class="text-primary">Casos satisfactorios</h4>
-                    <h3 class="display-6 mb-4">Nuestros clientes</h3>
-                    <p class="mb-4">
+                    <h4 class="text-primary" data-i18n="clients.eyebrow">Casos satisfactorios</h4>
+                    <h3 class="display-6 mb-4" data-i18n="clients.title">Nuestros clientes</h3>
+                    <p class="mb-4" data-i18n="clients.description">
                         Hemos aplicado nuestros productos en numerosos clientes
                     </p>
                 </div>
@@ -559,21 +616,21 @@
                     <div class="col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="1.2s">
                         <div class="gallery-item">
                             <img src="img/ecoterra/gallery-6.webp" alt="clientes_img" class="img-fluid">
-                            <div class="caption">Mina Peñasquito (México)</div>
+                            <div class="caption" data-i18n="clients.image.penasquitomine">Mina Peñasquito (México)</div>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="1.4s">
                         <div class="gallery-item">
                             <img src="img/ecoterra/gallery-7.webp" alt="clientes_img" class="img-fluid">
-                            <div class="caption">Descarga SQM</div>
+                            <div class="caption" data-i18n="clients.image.sqmload">Descarga SQM</div>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="1.6s">
                         <div class="gallery-item">
                             <img src="img/ecoterra/gallery-8.webp" alt="clientes_img" class="img-fluid">
-                            <div class="caption">Camino Bulnes</div>
+                            <div class="caption" data-i18n="clients.image.road">Camino Bulnes</div>
                         </div>
                     </div>
 
@@ -594,7 +651,7 @@
                     <div class="col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="2.2s">
                         <div class="gallery-item">
                             <img src="img/ecoterra/gallery-11.webp" alt="clientes_img" class="img-fluid">
-                            <div class="caption">Peñasquito (México)</div>
+                            <div class="caption" data-i18n="clients.image.penasquito">Peñasquito (México)</div>
                         </div>
                     </div>
 
@@ -616,10 +673,9 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="about-item-content bg-white rounded p-5 px-5">
-                            <h1>Conozca nuestros productos</h1>
-                            <h1 class="display-1 mb-4">¡No dude en escribirnos!</h1>
-                            <!--<h1 class="text-primary">info@consorcioecoterra-blauemeer.com</h1>-->
-                            <a class="btn btn-primary rounded-pill py-3 px-5" href="contact.html">¡Contáctanos!</a>
+                            <h1 data-i18n="cta.subtitle">Conozca nuestros productos</h1>
+                            <h1 class="display-1 mb-4" data-i18n="cta.title">¡No dude en escribirnos!</h1>
+                            <a class="btn btn-primary rounded-pill py-3 px-5" data-i18n="cta.button" href="contact.html">¡Contáctanos!</a>
                         </div>
                     </div>
                 </div>
@@ -651,8 +707,8 @@
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
         <!-- Dynamic Footer Script -->
         <script src="js/dynamicFooter.js"></script>
-        
-
+        <!-- Page Translation Script -->
+        <script src="js/language.js"></script>
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
     </body>

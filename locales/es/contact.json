@@ -1,0 +1,20 @@
+{
+    "page.title": "Contacto - Consorcio Ecoterra-Blauemeer",
+    "header.title": "¡Contáctanos!",
+    "contact.title": "Envía tu mensaje",
+
+    "form.name": "Nombre *",
+    "form.lastname": "Apellido *",
+    "form.email": "Correo electrónico *",
+    "form.phone": "Número Telefónico *",
+
+    "form.subject": "Asunto *",
+    "form.subject.placeholder": "Selecciona una opción...",
+    "form.subject.option1": "Ventas",
+    "form.subject.option2": "Cotización",
+    "form.subject.option3": "Información sobre productos",
+    "form.subject.option4": "Otros",
+
+    "form.message": "Mensaje *",
+    "form.submit": "Enviar Mensaje"
+}

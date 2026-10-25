@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Galería - Consorcio Ecoterra-Blauemeer</title>
+        <title data-i18n="page.title">Galería - Consorcio Ecoterra-Blauemeer</title>
         <link rel="icon" type="image/webp" href="img/logos/consorcio_img.webp">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
@@ -32,7 +32,7 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
 
-    <body>
+    <body data-page="gallery">
 
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -48,36 +48,101 @@
                 <a href="index.html" class="navbar-brand p-0">
                     <img src="img/logos/consorcio_letraimg.webp" alt="Logo Consorcio">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapseLang">
+                    <span class="fa fa-globe"></span>
+                </button>
+
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Inicio</a>
+                    <div class="navbar-nav mt-3 ms-4 py-0">
+                        <a href="index.html" class="nav-item nav-link" data-i18n="nav.home">Inicio</a>
                         <div class="nav-item dropdown">
                             <a href="ecoterra.html" class="nav-link" data-bs-toggle="dropdown">
-                                <span class="dropdown-toggle">Ecoterra</span>
+                                <span class="dropdown-toggle" data-i18n="nav.ecoterra">Ecoterra</span>
                             </a>
                             <div class="dropdown-menu m-0">
-                                <a href="ecoterra.html#sobre-nosotros" class="dropdown-item">Sobre nosotros</a>
-                                <a href="ecoterra.html#nuestros-productos" class="dropdown-item">Nuestros productos</a>
-                                <a href="ecoterra.html#por-que-elegirnos" class="dropdown-item">¿Por qué elegirnos?</a>
-                                <a href="ecoterra.html#nuestros-clientes" class="dropdown-item">Nuestros clientes</a>
+                                <a href="ecoterra.html#sobre-nosotros" class="dropdown-item" data-i18n="nav.about">Sobre nosotros</a>
+                                <a href="ecoterra.html#nuestros-productos" class="dropdown-item" data-i18n="nav.products">Nuestros productos</a>
+                                <a href="ecoterra.html#por-que-elegirnos" class="dropdown-item" data-i18n="nav.why">¿Por qué elegirnos?</a>
+                                <a href="ecoterra.html#nuestros-clientes" class="dropdown-item" data-i18n="nav.clients">Nuestros clientes</a>
                             </div>
                         </div>
 
-                        <a href="gallery.html" class="nav-item nav-link active">Galería</a>
+                        <a href="gallery.html" class="nav-item nav-link active" data-i18n="nav.gallery">Galería</a>
 
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                                <span class="dropdown-toggle">Asociaciones</span>
+                                <span class="dropdown-toggle" data-i18n="nav.partners">Asociaciones</span>
                             </a>
                             <div class="dropdown-menu m-0">
-                                <a href="blauemeer.html" class="dropdown-item">Blauemeer</a>
+                                <a href="blauemeer.html" class="dropdown-item" data-i18n="nav.blauemeer">Blauemeer</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                        <a href="contact.html" class="nav-item nav-link" data-i18n="nav.contact">Contacto</a>
+                    </div>
+                </div>
 
+
+                <div class="collapse navbar-collapse" id="navbarCollapseLang">
+                    <div class="navbar-nav mt-3 ms-auto py-0">
+                        <div class="nav-item dropdown ms-4">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="d-inline-flex align-items-center gap-2">
+                                    <img
+                                        id="langFlag"
+                                        src="https://flagcdn.com/w20/es.png"
+                                        width="20"
+                                        alt="Español"
+                                    >
+                                    <span id="langToggle">ES</span>
+                                    <span class="dropdown-toggle"></span>
+                                </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end end-0 m-0"> 
+                                <a href="#" class="dropdown-item ps-2" data-lang="es">
+                                    <div class="d-flex ps-2">
+                                        <picture class="pe-2">
+                                            <source
+                                                type="image/webp"
+                                                srcset="https://flagcdn.com/w20/es.webp,
+                                                https://flagcdn.com/w40/es.webp 2x">
+                                            <source
+                                                type="image/png"
+                                                srcset="https://flagcdn.com/w20/es.png,
+                                                https://flagcdn.com/w40/es.png 2x">
+                                            <img
+                                                src="https://flagcdn.com/w20/es.png"
+                                                width="20"
+                                                alt="Spain">
+                                        </picture>
+                                        <span data-i18n="language.spanish">Español</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="dropdown-item ps-2" data-lang="en">
+                                    <div class="d-flex ps-2">
+                                        <picture class="pe-2">
+                                            <source
+                                                type="image/webp"
+                                                srcset="https://flagcdn.com/w20/us.webp,
+                                                https://flagcdn.com/w40/us.webp 2x">
+                                            <source
+                                                type="image/png"
+                                                srcset="https://flagcdn.com/w20/us.png,
+                                                https://flagcdn.com/w40/us.png 2x">
+                                            <img
+                                                src="https://flagcdn.com/w20/us.png"
+                                                width="20"
+                                                alt="United States">
+                                        </picture>
+                                        <span data-i18n="language.english">Inglés</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -85,7 +150,7 @@
             <!-- Header Start -->
             <div class="container-fluid bg-breadcrumb" style="background-image: url(../img/ecoterra/hero_bg_gallery.webp);">
                 <div class="container text-center py-5" style="max-width: 900px;">
-                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Galería</h4>  
+                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-i18n="header.title" data-wow-delay="0.1s"></h4>  
                 </div>
             </div>
             <!-- Header End -->
@@ -98,8 +163,8 @@
             <!-- satisfactoryCases Start -->
             <div class="container">
                 <div class="text-center mx-auto pb-3 wow fadeInUp" data-wow-delay="0.2s" >
-                    <h4 class="text-primary">Casos satisfactorios</h4>
-                    <h3 class="display-6 mb-4">Nuestros clientes</h3>
+                    <h4 class="text-primary" data-i18n="satisCase.eyebrow">Casos satisfactorios</h4>
+                    <h3 class="display-6 mb-4" data-i18n="satisCase.title">Nuestros clientes</h3>
                 </div>
             </div>
 
@@ -144,21 +209,21 @@
                     <div class="col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="gallery-item">
                             <img src="img/ecoterra/gallery-6.webp" alt="clientes_img" class="img-fluid">
-                            <div class="caption">Mina Peñasquito (México)</div>
+                            <div class="caption" data-i18n="satisCase.image.penasquitomine">Mina Peñasquito (México)</div>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="0.8s">
                         <div class="gallery-item">
                             <img src="img/ecoterra/gallery-7.webp" alt="clientes_img" class="img-fluid">
-                            <div class="caption">Descarga SQM</div>
+                            <div class="caption" data-i18n="satisCase.image.sqmload">Descarga SQM</div>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="0.9s">
                         <div class="gallery-item">
                             <img src="img/ecoterra/gallery-8.webp" alt="clientes_img" class="img-fluid">
-                            <div class="caption">Camino Bulnes</div>
+                            <div class="caption" data-i18n="satisCase.image.road">Camino Bulnes</div>
                         </div>
                     </div>
 
@@ -179,7 +244,7 @@
                     <div class="col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="1.2s">
                         <div class="gallery-item">
                             <img src="img/ecoterra/gallery-11.webp" alt="clientes_img" class="img-fluid">
-                            <div class="caption">Peñasquito (México)</div>
+                            <div class="caption" data-i18n="satisCase.image.penasquito">Peñasquito (México)</div>
                         </div>
                     </div>
 
@@ -197,7 +262,7 @@
             <!-- PolycreteApplications Start -->
             <div class="container">
                 <div class="text-center mx-auto pb-3 wow fadeInUp" data-wow-delay="0.2s" >
-                    <h4 class="text-primary">Aplicaciones</h4>
+                    <h4 class="text-primary" data-i18n="polycrete.eyebrow">Aplicaciones</h4>
                     <h3 class="display-6 mb-4">Polycrete</h3>
                 </div>
             </div>
@@ -246,7 +311,7 @@
             <!-- DustopApplications Start -->
             <div class="container">
                 <div class="text-center mx-auto pb-3 wow fadeInUp" data-wow-delay="0.2s" >
-                    <h4 class="text-primary">Aplicaciones</h4>
+                    <h4 class="text-primary" data-i18n="dustop.eyebrow">Aplicaciones</h4>
                     <h3 class="display-6 mb-4">Dustop</h3>
                 </div>
             </div>
@@ -296,13 +361,12 @@
             <!-- Videos Start -->
              <div class="container">
                 <div class="text-center mx-auto pb-3 wow fadeInUp" data-wow-delay="0.2s" >
-                    <h4 class="text-primary">Aplicaciones</h4>
-                    <h3 class="display-6 mb-4">Videos</h3>
+                    <h4 class="text-primary" data-i18n="video.eyebrow">Aplicaciones</h4>
+                    <h3 class="display-6 mb-4" data-i18n="video.title">Videos</h3>
                 </div>
             </div>
 
             <div class="video-gallery-grid gallery mx-5">
-
 
                 <div class="gallery-item gallery-vertical small-img wow fadeInUp" data-wow-delay="0.2s">
                     <img src="img/ecoterra/nubleRutaN840_thumbnail.webp" alt="dustop_img" class="img-fluid">
@@ -320,18 +384,7 @@
                     <img src="img/play.png" alt="play_video" class="play-btn" data-video="vid/helipuerto.webm">
                 </div>
 
-                    
-
             </div>
-
-            <!-- 
-            <div class="wow fadeInUp" data-wow-delay="0.2s">
-                <div class="gallery-item small-img">
-                    <img src="img/ecoterra/conferencia_thumbnail.webp" alt="dustop_img" class="img-fluid">
-                    <img src="img/play.png" alt="play_video" class="play-btn" data-video="vid/conferencia.webm">
-                </div>
-            </div>
-            -->
             <!-- Videos End -->
         </div>
 
@@ -369,8 +422,8 @@
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
         <!-- Dynamic Footer Script -->
         <script src="js/dynamicFooter.js"></script>
-        
-
+        <!-- Page Translation Script -->
+        <script src="js/language.js"></script>
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
 

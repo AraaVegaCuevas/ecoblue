@@ -1,0 +1,77 @@
+{
+  "page.title": "About Ecoterra - Ecoterra-Blauemeer Consortium",
+
+  "about.eyebrow": "What We Do",
+  "about.title": "About Us",
+  "about.description": "We are a company of executives and professionals partnering in Chile with Ecoterra USA LLC. With extensive experience in industrial services, infrastructure, and field operations, we offer clients reliable, effective, efficient, and quality work using Ecoterra products for road stabilization and dust control.",
+
+  "about.dust.title": "Dust Suppressants",
+  "about.dust.description": "Our products combine organic wetting agents, hygroscopic minerals, and soil infiltrating agents, making them ideal allies for dust control programs. They preserve soil moisture for much longer, extending maintenance intervals and increasing road profitability without water consumption.",
+
+  "about.pavement.title": "Low-Cost Pavement",
+  "about.pavement.description": "When applied to soil, copolymer molecules bond soil and/or aggregate particles, forming a hard, flexible, water-resistant surface. Application rates can be adjusted for dust suppression, while higher rates achieve stabilization.",
+
+  "products.eyebrow": "What We Offer",
+  "products.title": "Our Products",
+  "products.polycrete.description1": "Polycrete is a polymer primarily designed to stabilize and harden surfaces, bonding soil particles to create a hard, flexible layer resistant to water and erosion.",
+  "products.polycrete.description2": "It can control dust and stabilize roads and traffic surfaces. It is also biodegradable, biocompatible, non-hazardous, and produces no oxidation or toxic waste.",
+  "products.dustop.description1": "Dustop is an emulsion primarily designed for water-free dust control, combining organic wetting agents, hygroscopic minerals, and infiltrating agents to retain soil moisture.",
+  "products.dustop.description2": "This reduces watering frequency, lowers water consumption, and improves road and mining fleet efficiency. It also covers more area per load than chloride products.",
+
+  "advantages.title": "Advantages",
+  "advantages.international.title": "International Development",
+  "advantages.international.description": "High-quality products from certified domestic and international laboratories.",
+  "advantages.water.title": "Low Water Consumption",
+  "advantages.water.description": "Our suppressants require minimal water (just 2% of normal biweekly consumption).",
+  "advantages.maintenance.title": "Low Maintenance",
+  "advantages.maintenance.description": "Minimal water trucks needed for road maintenance (1 or 2 every 15 days, or a couple of times yearly, depending on the product and area covered).",
+  "advantages.sustainable.title": "Sustainable Products",
+  "advantages.sustainable.description": "All our products are non-polluting and environmentally safe, making a positive contribution to planetary sustainability.",
+  "advantages.planned.title": "Scheduled Application",
+  "advantages.planned.description": "Our proposals include precise, defined work plans that companies can implement without hiring our services or staff. Training is available.",
+  "advantages.regularity.title": "Regularity",
+  "advantages.regularity.description": "Applications can include maintenance every 15 to 20 days (Dustop) or annually (Polycrete or Low-Cost Pavement).",
+
+  "why.eyebrow": "What Sets Us Apart",
+  "why.title": "Why Choose Us?",
+  "why.description1": "Companies offering similar products claim they are eco-friendly and eliminate dust and pollution. However, these products are unsuitable for every terrain, lack maintenance plans, and have high application costs.",
+  "why.description2": "Our products, by contrast, offer high quality, defined application plans, low application costs, and longer-lasting results than traditional products, increasing profitability for our clients.",
+
+  "process.scarifying.title": "Scarifying",
+  "process.scarifying.description1": "Mechanical road scarification involves several key steps to restore and level the road surface.",
+  "process.scarifying.description2": "First, a motor grader equipped with steel scarifying teeth breaks up and loosens the topsoil. This process removes existing irregularities and compaction.",
+  "process.scarifying.description3": "As the grader moves forward, the teeth penetrate the soil, lifting and mixing loose material. This allows better absorption of binding products in later stages, improving road stability and durability.",
+
+  "process.leveling.title": "Leveling",
+  "process.leveling.description1": "Leveling is essential to ensure the ground surface is uniform and suitable for use.",
+  "process.leveling.description2": "The process begins with a motor grader equipped with a blade adjustable to different angles and depths. The blade cuts and moves soil, filling potholes and removing unnecessary elevations. The operator continually adjusts the blade to achieve a smooth, even surface.",
+  "process.leveling.description3": "Proper leveling is crucial for road stability, as uneven surfaces can cause drainage problems and increase road wear.",
+
+  "process.compacting.title": "Compacting",
+  "process.compacting.description1": "Road compaction is essential for ensuring durability and stability. This process begins after scarifying and leveling the ground.",
+  "process.compacting.description2": "A heavy compactor roller applies pressure to the road surface. It repeatedly passes over loose soil, consolidating and densifying the material. Compaction removes air gaps and increases soil particle cohesion, improving erosion resistance and vehicle load-bearing capacity.",
+  "process.compacting.description3": "Proper compaction ensures a firm, uniform base essential for road durability.",
+
+  "process.topical.title": "Topical Application",
+  "process.topical.description1": "Topical application of road binding products through spray irrigation uses spraying equipment to distribute the binder evenly across the road surface.",
+  "process.topical.description2": "The spray nozzle atomizes the chemical into small droplets that spread across the soil, ensuring uniform coverage. As the binder settles, it adheres to soil particles, forming bonds that increase cohesion and ground stability.",
+  "process.topical.description3": "Spray distribution enables efficient, controlled application, maximizing the binder's effectiveness in road stabilization.",
+
+  "process.mixed.title": "Mixed Application",
+  "process.mixed.description1": "Mixed application involves several key steps. First, scarified material is collected and blended with a binding product in suitable proportions. Specialized equipment ensures a homogeneous mixture.",
+  "process.mixed.description2": "Once the scarified material and binder are thoroughly mixed, they are evenly distributed across the road using a motor grader. A compactor roller then consolidates and densifies the mixture, ensuring a firm, stable road base.",
+  "process.mixed.description3": "This process provides a surface resistant to vehicle traffic and improves road durability.",
+
+  "clients.eyebrow": "Successful Projects",
+  "clients.title": "Our Clients",
+  "clients.description": "We have applied our products for numerous clients.",
+
+  "clients.image.penasquitomine": "Peñasquito Mine (Mexico)",
+  "clients.image.sqmload": "SQM Unloading",
+  "clients.image.road": "Bulnes Road",
+  "clients.image.penasquito": "Peñasquito (Mexico)",
+
+  "cta.title": "Discover Our Products",
+  "cta.subtitle": "Feel free to contact us!",
+  "cta.button": "Contact Us!"
+}

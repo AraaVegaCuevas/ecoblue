@@ -1,0 +1,20 @@
+{
+    "page.title": "Contact - Ecoterra-Blauemeer Consortium",
+    "header.title": "Contact Us!",
+    "contact.title": "Send Your Message",
+
+    "form.name": "First Name *",
+    "form.lastname": "Last Name *",
+    "form.email": "Email Address *",
+    "form.phone": "Phone Number *",
+
+    "form.subject": "Subject *",
+    "form.subject.placeholder": "Select an option...",
+    "form.subject.option1": "Sales",
+    "form.subject.option2": "Quote",
+    "form.subject.option3": "Product Information",
+    "form.subject.option4": "Other",
+
+    "form.message": "Message *",
+    "form.submit": "Send Message"
+}

@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Sobre Blauemeer - Consorcio Ecoterra-Blauemeer</title>
+        <title data-i18n="page.title">Sobre Blauemeer - Consorcio Ecoterra-Blauemeer</title>
         <link rel="icon" type="image/webp" href="img/logos/consorcio_img.webp">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
@@ -31,7 +31,7 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
 
-    <body>
+    <body data-page="blauemeer">
 
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -47,36 +47,101 @@
                 <a href="index.html" class="navbar-brand p-0">
                     <img src="img/logos/consorcio_letraimg.webp" alt="Logo Consorcio">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapseLang">
+                    <span class="fa fa-globe"></span>
+                </button>
+
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Inicio</a>
+                    <div class="navbar-nav mt-3 ms-4 py-0">
+                        <a href="index.html" class="nav-item nav-link" data-i18n="nav.home">Inicio</a>
                         <div class="nav-item dropdown">
                             <a href="ecoterra.html" class="nav-link" data-bs-toggle="dropdown">
-                                <span class="dropdown-toggle">Ecoterra</span>
+                                <span class="dropdown-toggle" data-i18n="nav.ecoterra">Ecoterra</span>
                             </a>
                             <div class="dropdown-menu m-0">
-                                <a href="ecoterra.html#sobre-nosotros" class="dropdown-item">Sobre nosotros</a>
-                                <a href="ecoterra.html#nuestros-productos" class="dropdown-item">Nuestros productos</a>
-                                <a href="ecoterra.html#por-que-elegirnos" class="dropdown-item">¿Por qué elegirnos?</a>
-                                <a href="ecoterra.html#nuestros-clientes" class="dropdown-item">Nuestros clientes</a>
+                                <a href="ecoterra.html#sobre-nosotros" class="dropdown-item" data-i18n="nav.about">Sobre nosotros</a>
+                                <a href="ecoterra.html#nuestros-productos" class="dropdown-item" data-i18n="nav.products">Nuestros productos</a>
+                                <a href="ecoterra.html#por-que-elegirnos" class="dropdown-item" data-i18n="nav.why">¿Por qué elegirnos?</a>
+                                <a href="ecoterra.html#nuestros-clientes" class="dropdown-item" data-i18n="nav.clients">Nuestros clientes</a>
                             </div>
                         </div>
 
-                        <a href="gallery.html" class="nav-item nav-link">Galería</a>
+                        <a href="gallery.html" class="nav-item nav-link" data-i18n="nav.gallery">Galería</a>
 
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link active" data-bs-toggle="dropdown">
-                                <span class="dropdown-toggle">Asociaciones</span>
+                                <span class="dropdown-toggle" data-i18n="nav.partners">Asociaciones</span>
                             </a>
                             <div class="dropdown-menu m-0">
-                                <a href="blauemeer.html" class="dropdown-item">Blauemeer</a>
+                                <a href="blauemeer.html" class="dropdown-item" data-i18n="nav.blauemeer">Blauemeer</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                        <a href="contact.html" class="nav-item nav-link" data-i18n="nav.contact">Contacto</a>
+                    </div>
+                </div>
 
+
+                <div class="collapse navbar-collapse" id="navbarCollapseLang">
+                    <div class="navbar-nav mt-3 ms-auto py-0">
+                        <div class="nav-item dropdown ms-4">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="d-inline-flex align-items-center gap-2">
+                                    <img
+                                        id="langFlag"
+                                        src="https://flagcdn.com/w20/es.png"
+                                        width="20"
+                                        alt="Español"
+                                    >
+                                    <span id="langToggle">ES</span>
+                                    <span class="dropdown-toggle"></span>
+                                </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end end-0 m-0"> 
+                                <a href="#" class="dropdown-item ps-2" data-lang="es">
+                                    <div class="d-flex ps-2">
+                                        <picture class="pe-2">
+                                            <source
+                                                type="image/webp"
+                                                srcset="https://flagcdn.com/w20/es.webp,
+                                                https://flagcdn.com/w40/es.webp 2x">
+                                            <source
+                                                type="image/png"
+                                                srcset="https://flagcdn.com/w20/es.png,
+                                                https://flagcdn.com/w40/es.png 2x">
+                                            <img
+                                                src="https://flagcdn.com/w20/es.png"
+                                                width="20"
+                                                alt="Spain">
+                                        </picture>
+                                        <span data-i18n="language.spanish">Español</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="dropdown-item ps-2" data-lang="en">
+                                    <div class="d-flex ps-2">
+                                        <picture class="pe-2">
+                                            <source
+                                                type="image/webp"
+                                                srcset="https://flagcdn.com/w20/us.webp,
+                                                https://flagcdn.com/w40/us.webp 2x">
+                                            <source
+                                                type="image/png"
+                                                srcset="https://flagcdn.com/w20/us.png,
+                                                https://flagcdn.com/w40/us.png 2x">
+                                            <img
+                                                src="https://flagcdn.com/w20/us.png"
+                                                width="20"
+                                                alt="United States">
+                                        </picture>
+                                        <span data-i18n="language.english">Inglés</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -99,23 +164,23 @@
                         <img class="img-fluid rounded h-100 w-100 object-fit-cover" src="img/blauemeer/about_blauemeer.webp" alt="Sobre Blauemeer">
                     </div>
                     <div class="col-lg-6 about-us-b-text wow fadeInRight" data-wow-delay="0.2s">
-                        <h4 class="text-primary">Pioneros del desguace</h4>
-                        <h3 class="display-6 mb-4">Sobre nosotros</h3>
-                        <p class="mb-4">
+                        <h4 class="text-primary" data-i18n="about.eyebrow">Pioneros del desguace</h4>
+                        <h3 class="display-6 mb-4" data-i18n="about.title">Sobre nosotros</h3>
+                        <p class="mb-4" data-i18n="about.description1">
                             Blaue Meer LTDA. Es una empresa chilena compuesta por un equipo multidisciplinario ligado al ámbito marítimo, 
                             de navegación, científico y ambiental del más alto nivel, en una cohesión profesional que hemos denominado 
                             "Eco-Oceanografía Industrial". Esta sería la aplicación de la oceanografía y ciencias relacionadas para 
                             la solución de problemáticas económicas y ecológicas del ámbito marítimo (portuario, industrial, pesquero y de defensa),
                             mediante el desarrollo y ejecución de procesos tecnológicos y/o industriales innovadores y sostenibles.
                         </p>
-                        <p class="mb-4">
+                        <p class="mb-4" data-i18n="about.description2">
                             Desde estudios y modelaciones oceanográficas de ultra alta resolución para manejo costero y bahías, pasando por estudios 
                             y modelaciones ecosistémicos y biogeoquímicos, asesorías en estabilidad y maniobras, servicios marítimos como 
                             reflotamientos, desvaramientos y desguaces de naves y artefactos; hasta servicios submarinos especializados prestados 
                             por un equipo de ex buzos tácticos de la Armada de Chile, Blaue Meer busca otorgar soluciones razonables, eficientes, 
                             sostenibles y amigables con el medio ambiente.
                         </p>
-                        <p>
+                        <p data-i18n="about.description3">
                             Nuestro equipo científico proviene de la prestigiosa Universidad de Concepción y mantiene importantes nexos con 
                             comunidades científicas internacionales.
                         </p>
@@ -131,9 +196,9 @@
             <div class="container-fluid workattr pb-3">
                 <div class="container">
                     <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                        <h4 class="text-primary">Lo que nos enfrentamos</h4>
-                        <h1 class="display-5 mb-4">El desguace, un desafío eco-social</h1>
-                        <p class="mb-0">
+                        <h4 class="text-primary" data-i18n="work.eyebrow">Lo que nos enfrentamos</h4>
+                        <h1 class="display-5 mb-4" data-i18n="work.title">El desguace, un desafío eco-social</h1>
+                        <p class="mb-0" data-i18n="work.description">
                             El desguace de embarcaciones se encuentra entre las cinco profesiones más peligrosas según la Organización
                             Internacional del Trabajo (OIT). Siendo necesario de este modo, cumplir con una serie de desafíos que deben
                             abordarse adecuadamente para garantizar un proceso seguro y eficiente.
@@ -144,19 +209,18 @@
                             <div class="workattr-img">
                                 <img src="img/blauemeer/scrachall-1.webp" class="img-fluid rounded-top" alt="Seguridad">
                                 <div class="workattr-title">
-                                    <p class="btn">Prevención de riesgos</p>
+                                    <p class="btn" data-i18n="work.security.eyebrow">Prevención de riesgos</p>
                                 </div>
                             </div>
                             <div class="workattr-text p-4">
                                 <i class="fas fa-hard-hat fa-2x"></i>
-                                <h4 class="d-inline-block ms-2">Seguridad</h4>
+                                <h4 class="d-inline-block ms-2" data-i18n="work.security.title">Seguridad</h4>
                                 
-                                <p>
+                                <p data-i18n="work.security.description1">
                                     El desmantelamiento de un barco puede ser peligroso debido a la presencia de equipos
                                     y sistemas complejos, sumado a la posible presencia de materiales y residuos peligrosos. 
-                                    
                                 </p>
-                                <p>
+                                <p data-i18n="work.security.description2">
                                     Es importante tomar medidas de seguridad adecuadas para proteger a los/las trabajadores
                                     y minimizar el riesgo de accidentes, garantizando así un proceso seguro y eficiente.
                                 </p>
@@ -168,18 +232,17 @@
                             <div class="workattr-img">
                                 <img src="img/blauemeer/scrachall-2.webp" class="img-fluid rounded-top" alt="Medio Ambiente">
                                 <div class="workattr-title">
-                                    <p class="btn">Oceanográfia y ecosistemas</p>
+                                    <p class="btn" data-i18n="work.ocean.eyebrow">Oceanográfia y ecosistemas</p>
                                 </div>
                             </div>
                             <div class="workattr-text p-4">
                                 <i class="fas fa-leaf fa-2x"></i>
-                                <h4 class="d-inline-block ms-2">Medio Ambiente</h4>
-                                <p>
+                                <h4 class="d-inline-block ms-2" data-i18n="work.ocean.title">Medio Ambiente</h4>
+                                <p data-i18n="work.ocean.description1">
                                     El desguace de embarcaciones puede tener un impacto ambiental negativo si no
                                     se gestiona adecuadamente.
-                                    
                                 </p>
-                                <p>
+                                <p data-i18n="work.ocean.description2">
                                     Es importante que se sigan todas las regulaciones y normativas ambientales
                                     aplicables para minimizar el impacto en el medio ambiente y proteger la salud
                                     humana, tanto de trabajadores como de comunidades aledañas.
@@ -192,18 +255,18 @@
                             <div class="workattr-img">
                                 <img src="img/blauemeer/scrachall-3.webp" class="img-fluid rounded-top" alt="Reciclaje">
                                 <div class="workattr-title">
-                                    <p class="btn">Reducción en la emisión de CO2</p>
+                                    <p class="btn" data-i18n="work.recycle.eyebrow">Reducción en la emisión de CO2</p>
                                 </div>
                             </div>
                             <div class="workattr-text p-4">
                                 <i class="fas fa-recycle fa-2x"></i>
-                                <h4 class="d-inline-block ms-2">Reciclaje</h4>
-                                <p>
+                                <h4 class="d-inline-block ms-2" data-i18n="work.recycle.title">Reciclaje</h4>
+                                <p data-i18n="work.recycle.description1">
                                     Un desafío importante del desguace es el reciclaje de los materiales y componentes 
                                     que se retiran de una embarcación.
                                     
                                 </p>
-                                <p>
+                                <p data-i18n="work.recycle.description2">
                                     Es importante asegurarse de que se utilicen métodos de reciclaje adecuados, 
                                     certificados y con determinación final. Asegurando así, la maximización en la 
                                     cantidad de materiales reciclados minimizando el impacto ambiental.
@@ -216,18 +279,17 @@
                             <div class="workattr-img">
                                 <img src="img/blauemeer/scrachall-4.webp" class="img-fluid rounded-top" alt="Costos">
                                 <div class="workattr-title">
-                                    <p class="btn">Innovación y cuidado ambiental</p>
+                                    <p class="btn" data-i18n="work.cost.eyebrow">Innovación y cuidado ambiental</p>
                                 </div>
                             </div>
                             <div class="workattr-text p-4">
                                 <i class="fas fa-truck fa-2x"></i>
-                                <h4 class="d-inline-block ms-2">Costos</h4>
-                                <p>
+                                <h4 class="d-inline-block ms-2" data-i18n="work.cost.title">Costos</h4>
+                                <p data-i18n="work.cost.description1">
                                     El desguace de barcos puede ser un proceso costoso debido a la complejidad del trabajo 
                                     y a la necesidad de seguir regulaciones y normativas específicas.
-                                    
                                 </p>
-                                <p>
+                                <p data-i18n="work.cost.description2">
                                     Es de real importancia planificar adecuadamente los procesos para minimizar los costos
                                     y maximizar la eficiencia, garantizando así un proceso sostenible.
                                 </p>
@@ -242,7 +304,7 @@
             <div class="container-fluid scrachall mt-3 pb-5">
                 <div class="container">
                     <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                        <p class="mb-0">
+                        <p class="mb-0" data-i18n="scrachall.description">
                             Como empresa comprendemos lo crucial que es seguir todas las normativas y regulaciones aplicables, 
                             nacionales e internacionales, y garantizar la seguridad tanto de trabajadores como del medio
                             ambiente durante nuestros trabajos.
@@ -257,8 +319,8 @@
                                 </div>
                                 
                                 <div class="rounded-bottom p-4">
-                                    <h4 class="d-inline-block mb-4">Desguace Ex PAM Zuiderster 4</h4>
-                                    <p class="mb-4">
+                                    <h4 class="d-inline-block mb-4" data-i18n="scrachall.scrapping.title">Desguace Ex PAM Zuiderster 4</h4>
+                                    <p class="mb-4" data-i18n="scrachall.scrapping.description">
                                         Trabajo realizado entre septiembre de 2014 y febrero de 2015. Su realización y cumplimiento
                                         total de faenas, cuentan con la certificación de la Armada de Chile.
                                     </p>
@@ -272,8 +334,8 @@
                                     <img src="img/blauemeer/scrachall-6.webp" class="img-fluid rounded-top w-100" alt="Image">
                                 </div>
                                 <div class="rounded-bottom p-4">
-                                    <h4 class="d-inline-block mb-4">Desarrollo Oceanográfico</h4>
-                                    <p class="mb-4">
+                                    <h4 class="d-inline-block mb-4" data-i18n="scrachall.development.title">Desarrollo Oceanográfico</h4>
+                                    <p class="mb-4" data-i18n="scrachall.development.description">
                                         El Departamento Ecosocio-Oceanográfico de Blaue Meer, cuenta con personal especializado
                                         en análisis e identificación de procesos oceanográficos con sentido ecosistémico
                                     </p>
@@ -290,8 +352,8 @@
         <div class="mb-5" id="nuestro-trabajo">
             <div class="container">
                 <div class="text-center mx-auto pb-3 wow fadeInUp" data-wow-delay="0.2s" >
-                    <h4 class="text-primary">Ejemplos de nuestro servicio</h4>
-                    <h3 class="display-6 mb-4">Nuestro trabajo</h3>
+                    <h4 class="text-primary" data-i18n="gallery.eyebrow">Ejemplos de nuestro servicio</h4>
+                    <h3 class="display-6 mb-4" data-i18n="gallery.title">Nuestro trabajo</h3>
                 </div>
             </div>
 
@@ -381,10 +443,9 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="about-item-content bg-white rounded p-5 px-5">
-                            <h1>¿Tiene alguna duda?</h1>
-                            <h1 class="display-1 mb-4">¡No dude en escribirnos!</h1>
-                            <!-- <h1 class="text-primary">info@consorcioecoterra-blauemeer.com</h1>-->
-                            <a class="btn btn-primary rounded-pill py-3 px-5" href="contact.html">¡Contáctanos!</a>
+                            <h1 data-i18n="cta.eyebrow">¿Tiene alguna duda?</h1>
+                            <h1 class="display-1 mb-4" data-i18n="cta.title">¡No dude en escribirnos!</h1>
+                            <a class="btn btn-primary rounded-pill py-3 px-5" href="contact.html" data-i18n="cta.button">¡Contáctanos!</a>
                         </div>
                     </div>
                 </div>
@@ -417,8 +478,8 @@
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
         <!-- Dynamic Footer Script -->
         <script src="js/dynamicFooter.js"></script>
-        
-
+        <!-- Page Translation Script -->
+        <script src="js/language.js"></script>
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
     </body>

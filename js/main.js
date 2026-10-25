@@ -93,6 +93,50 @@
         nav: false
     });
 
+    // Language Menu
+    const langToggle = document.getElementById("langToggle");
+    const langFlag = document.getElementById("langFlag");
+
+    const langItems = document.querySelectorAll(
+        "#navbarCollapseLang .dropdown-item[data-lang]"
+    );
+
+    const languages = {
+        es: {
+            label: "ES",
+            flag: "https://flagcdn.com/w20/es.png",
+            alt: "Español"
+        },
+        en: {
+            label: "EN",
+            flag: "https://flagcdn.com/w20/us.png",
+            alt: "English"
+        }
+    };
+
+    let currentLang = "es";
+
+    function updateLanguageSelector(lang) {
+        const selected = languages[lang];
+
+        if (!selected) return;
+
+        currentLang = lang;
+        langToggle.textContent = selected.label;
+        langFlag.src = selected.flag;
+        langFlag.alt = selected.alt;
+
+        document.documentElement.lang = lang;
+    }
+
+    langItems.forEach(item => {
+        item.addEventListener("click", event => {
+            event.preventDefault();
+
+            updateLanguageSelector(item.dataset.lang);
+        });
+    });
+
     /* Video Popup Start */
     const YTPlayerOverlay = document.querySelector('.youtube-player-overlay');
     const YTPlay = document.querySelectorAll('.play-btn');

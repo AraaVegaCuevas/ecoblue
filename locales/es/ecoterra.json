@@ -1,0 +1,77 @@
+{
+  "page.title": "Sobre Ecoterra - Consorcio Ecoterra-Blauemeer",
+
+  "about.eyebrow": "Lo que hacemos",
+  "about.title": "Sobre nosotros",
+  "about.description": "Somos una empresa integrada por ejecutivos y profesionales que en alianza en Chile con la empresa Ecoterra USA LLC, con vasta experiencia en servicios industriales, infraestructura y operaciones de terreno, estamos ofreciendo a nuestros clientes un trabajo serio, efectivo, eficiente y de calidad, mediante la aplicación de los productos de Ecoterra, que son productos para estabilización de caminos, y controladores de polvo en los mismos.",
+
+  "about.dust.title": "Supresores de polvo",
+  "about.dust.description": "Nuestros productos, resultan de la unión de humectantes orgánicos junto a minerales Higroscópicos y agentes infiltradores de suelos, que resultan ser un aliado perfecto para los programas de control de polvo, logrando que las condiciones de humedad del suelo permanecen intactas durante mucho más tiempo, alejando entre si los riegos de mantención, lo cual se traduce en una mayor rentabilidad en sus caminos sin gasto de agua.",
+
+  "about.pavement.title": "Pavimento de bajo costo",
+  "about.pavement.description": "Aplicados al suelo, las moléculas de copolímero forman enlaces entre el suelo y/o  las partículas de agregado, para formar una superficie dura, flexible y resistente al agua. Las tasas de aplicación se pueden ajustar para dar cabida a la supresión de polvo y tasas de aplicación más altas pueden lograr la estabilización.",
+
+  "products.eyebrow": "Lo que ofrecemos",
+  "products.title": "Nuestros productos",
+  "products.polycrete.description1": "Polycrete es un polímero orientado principalmente a la estabilización y endurecimiento de superficies, formando enlaces entre las partículas del suelo que generan una capa dura, flexible, resistente al agua y a la erosión.",
+  "products.polycrete.description2": "Puede utilizarse tanto para controlar polvo como para estabilizar caminos y superficies de tránsito. Además, es biodegradable, biocompatible, no peligroso y no genera oxidación ni residuos tóxicos.",
+  "products.dustop.description1": "Dustop es una emulsión orientada principalmente al control de polvo sin utilizar agua, combinando humectantes orgánicos, minerales higroscópicos y agentes infiltradores que permiten retener la humedad del suelo.",
+  "products.dustop.description2": "Esto reduce la frecuencia de los riegos, disminuye el consumo de agua y mejora la eficiencia de los caminos y la flota minera. Además, cubre mayor superficie por carga que los productos de cloruro.",
+
+  "advantages.title": "Ventajas",
+  "advantages.international.title": "Desarrollo internacional",
+  "advantages.international.description": "Productos de alta calidad provenientes de laboratorios certificados, nacionales e internacionales.",
+  "advantages.water.title": "Bajo consumo de agua",
+  "advantages.water.description": "Nuestros supresores requieren un mínimo de agua (solo 2% del gasto quincenal normal).",
+  "advantages.maintenance.title": "Baja mantención",
+  "advantages.maintenance.description": "Mínima cantidad de aljibes para mantención de caminos. ( 1 o 2 cada 15 días o un par de veces al año dependiendo del producto y el área a cubrir).",
+  "advantages.sustainable.title": "Productos sustentables",
+  "advantages.sustainable.description": "Todos nuestros productos no contaminan y no causan daño al medio ambiente, haciendo una contribución positiva a la sostenibilidad del planeta.",
+  "advantages.planned.title": "Aplicación programada",
+  "advantages.planned.description": "Nuestras propuestas son precisas con un plan de trabajo definido y que puede ser realizado por la compañía sin necesidad de contratar nuestros servicios y personal, se puede entregar capacitación para ello.",
+  "advantages.regularity.title": "Regularidad",
+  "advantages.regularity.description": "Podemos hacer aplicaciones con mantenciones cada 15 a 20 días (Dustop) o Aplicaciones con una mantención anual (Polycrete o Pavimento de bajo costo).",
+
+  "why.eyebrow": "Lo que nos diferencia",
+  "why.title": "¿Por qué elegirnos?",
+  "why.description1": "Todas las empresas que ofrecen productos similares en el mercado dicen tener productos ecológicos, que eliminan polvo y polución, sin embargo, la aplicación de estos no es para todo tipo de terreno, ya que no tienen un plan de mantención y los costos de aplicación son elevados.",
+  "why.description2": "Nuestros productos, en cambio, son de alta calidad, con un plan de aplicación definido, con costos de aplicación bajos y con resultados que se mantienen por mucho más tiempo que los productos tradicionales, lo que se traduce en una mayor rentabilidad para nuestros clientes.",
+
+  "process.scarifying.title": "Escarificado",
+  "process.scarifying.description1": "El proceso de escarificado de vías con maquinaria implica varios pasos clave para restaurar y nivelar la superficie del camino.",
+  "process.scarifying.description2": "Primero, se utiliza una motoniveladora equipada con escarificadores, que son dientes de acero, para romper y aflojar la capa superior del suelo. Este proceso elimina las irregularidades y compactaciones previas.",
+  "process.scarifying.description3": "A medida que la motoniveladora avanza, los escarificadores penetran el suelo, levantando y mezclando el material suelto. Esto permite una mejor absorción de los productos aglomerantes en etapas posteriores del proceso, mejorando la estabilidad y durabilidad de la vía.",
+
+  "process.leveling.title": "Nivelado",
+  "process.leveling.description1": "El proceso de nivelado es fundamental para garantizar que la superficie del terreno esté uniforme y adecuada para su uso.",
+  "process.leveling.description2": "Este proceso comienza con el uso de una motoniveladora, una máquina equipada con una cuchilla frontal que se ajusta a diferentes ángulos y profundidades. La cuchilla corta y mueve el material del suelo, rellenando los baches y eliminando las elevaciones innecesarias. El operador ajusta continuamente la posición de la cuchilla para lograr una superficie lisa y homogénea.",
+  "process.leveling.description3": "El nivelado adecuado es crucial para la estabilidad de la vía, ya que una superficie irregular puede causar problemas de drenaje y aumentar el desgaste del camino.",
+
+  "process.compacting.title": "Compactado",
+  "process.compacting.description1": "El proceso de compactado de una vía es esencial para asegurar su durabilidad y estabilidad. Este proceso comienza después del escarificado y nivelado del terreno.",
+  "process.compacting.description2": "Se utiliza un rodillo compactador, una maquinaria pesada que aplica presión sobre la superficie de la vía. El rodillo pasa repetidamente sobre el suelo suelto, consolidando y densificando el material. Esta compactación elimina los huecos de aire y aumenta la cohesión de las partículas del suelo, lo que mejora la resistencia a la erosión y la capacidad de soportar el tráfico vehicular.",
+  "process.compacting.description3": "Un compactado adecuado garantiza una base firme y uniforme, esencial para la durabilidad de la vía.",
+
+  "process.topical.title": "Aplicación tópica",
+  "process.topical.description1": "El proceso de aplicación tópica del producto aglomerante para vías de circulación vehicular mediante riego por aspersión consiste en utilizar un equipo de aspersión para distribuir uniformemente el aglomerante sobre la superficie del camino.",
+  "process.topical.description2": "La boquilla del aspersor atomiza el producto químico en pequeñas gotas que se esparcen sobre el suelo, asegurando una cobertura uniforme. A medida que el aglomerante se deposita, se adhiere a las partículas del suelo, formando enlaces que aumentan la cohesión y estabilidad del terreno.",
+  "process.topical.description3": "La distribución por aspersión permite una aplicación eficiente y controlada, maximizando la efectividad del aglomerante en la estabilización del camino.",
+
+  "process.mixed.title": "Aplicación mixta",
+  "process.mixed.description1": "El proceso de aplicación mixed implica varios pasos clave. Primero, el material escarificado se recoge y se mezcla con un producto aglomerante en una proporción adecuada. Esta mezcla se realiza utilizando equipos especializados que aseguran una combinación homogénea.",
+  "process.mixed.description2": "Una vez que el material escarificado y el aglomerante están bien mezclados, se distribuyen uniformemente sobre la superficie de la vía utilizando una motoniveladora. Posteriormente, se utiliza un rodillo compactador para consolidar y densificar la mezcla aplicada, asegurando una base firme y estable para la vía.",
+  "process.mixed.description3": "Este proceso proporciona una superficie resistente al tráfico vehicular y mejora la durabilidad de la vía.",
+
+  "clients.eyebrow": "Casos satisfactorios",
+  "clients.title": "Nuestros clientes",
+  "clients.description": "Hemos aplicado nuestros productos en numerosos clientes.",
+
+  "clients.image.penasquitomine": "Mina Peñasquito (México)",
+  "clients.image.sqmload": "Descarga SQM",
+  "clients.image.road": "Camino Bulnes",
+  "clients.image.penasquito": "Peñasquito (México)",
+
+  "cta.title": "Conozca nuestros productos",
+  "cta.subtitle": "¡No dude en escribirnos!",
+  "cta.button": "¡Contáctanos!"
+}
